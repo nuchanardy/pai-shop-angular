@@ -1,0 +1,27 @@
+.box {
+  margin: 80px 0px 0px 0px;
+}
+
+.img-detail {
+  margin: 30px 0px 0px 0px;
+}
+
+.center {
+  text-align: center;
+}
+
+.box-detail-header {
+  font-weight: bold;
+  font-size: 17px;
+  padding: 50px 0px 0px 50px;
+}
+
+.box-detail {
+  font-weight: bold;
+  font-size: 17px;
+  padding: 20px 0px 0px 100px;
+}
+
+.box-cart {
+  margin: 40px 0px 0px 85px;
+}

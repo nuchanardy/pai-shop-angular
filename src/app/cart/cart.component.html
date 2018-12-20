@@ -1,0 +1,65 @@
+<div class="box">
+    <div class="col-md-1"></div>
+    <div class="col-md-10" *ngFor="let productss of products | async">
+
+        <div class="col-md-12 end-box">
+            <strong>
+                <h2 class="center" style="color:white;">Shopping Basket</h2>
+            </strong>
+        </div>
+
+        <div class="center">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col" class="text-size">Product Name</th>
+                        <th scope="col" class="text-size">Price</th>
+                        <th scope="col" class="text-size">Quantity</th>
+                        <th scope="col" class="text-size">Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-active">
+                        <td> {{ productss.name }} </td>
+                        <td> {{ productss.price }} </td>
+                        <td> 1 </td>
+                        <td> {{ productss.price }} </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="box-order-summary">
+            <div class="col-md-6"></div>
+
+            <div class="col-md-6">
+                <div class="col-md-12 end-box">
+                    <strong>
+                        <h2 class="center" style="color:white; font-size: 15px;">Order Summary</h2>
+                    </strong>
+                </div>
+                <table class="table table-hover">
+                    <tbody>
+                        <tr style="font-weight: bold;">
+                            <td>Price</td>
+                            <td> {{ productss.price }} </td>
+                        </tr>
+                        <tr style="font-weight: bold;">
+                            <td>Shipping charge</td>
+                            <td>Free</td>
+                        </tr>
+                        <tr style="font-weight: bold;">
+                            <td>Subtotal</td>
+                            <td> {{ productss.price }} </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="center">
+                    <a href="#" class="btn btn-info" role="button" style="font-size: 15px; border-radius: 15px; padding: 15px;">Submit</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-1"></div>
+</div>
