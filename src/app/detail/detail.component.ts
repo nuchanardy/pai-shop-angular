@@ -12,7 +12,7 @@ export class DetailComponent implements OnInit {
 
   constructor(private route: ActivatedRoute,private firebase: AngularFireDatabase) { }
 
-  private products: Observable<any[]>;
+  products: Observable<any[]>;
   
   private productname: any;
 

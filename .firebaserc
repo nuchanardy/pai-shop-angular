@@ -1,5 +1,6 @@
 {
   "projects": {
-    "y": "paishop-40485"
+    "y": "paishop-40485",
+    "default": "paishop-40485"
   }
 }

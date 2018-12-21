@@ -1,19 +1,18 @@
 <div class="box">
-    <form style="margin: 50px; padding: 0px 350px 0px 350px;">
-        <legend class="center">Login</legend>
-        <div class="form-group">
-          <label for="Email1">Email address</label>
-          <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="Enter email">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
-        <div class="center">
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-    </form>
+  <div style="margin: 50px; padding: 0px 350px 0px 350px;">
+    <legend class="center">Login</legend>
+    <div class="form-group">
+      <label for="email1">Email address</label>
+      <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="email">
+    </div>
+    <div class="form-group">
+      <label for="password1">Password</label>
+      <input type="password" class="form-control" id="password1" placeholder="Password" [(ngModel)]="password">
+    </div>
+    <div class="center">
+      <a type="submit" class="btn btn-primary" role="button" (click)="login()">Submit</a>
+    </div>
+  </div>
 </div>
 
-<button (click)="insert()">submit</button>
-
+<!-- <button (click)="insert()">submit</button> -->

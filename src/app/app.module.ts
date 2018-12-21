@@ -15,6 +15,8 @@ import { TrackorderComponent } from './trackorder/trackorder.component';
 import { DetailComponent } from './detail/detail.component';
 import { AdminComponent } from './admin/admin.component';
 import { CartComponent } from './cart/cart.component';
+import { ProfileComponent } from './profile/profile.component';
+import { FormsModule } from '@angular/forms';
 
 var config = {
   apiKey: "AIzaSyBBcs4AFYMS7vMUPXhPhiwXXMCcV1uKigk",
@@ -27,12 +29,13 @@ var config = {
 
 const routes: Routes = [
   {path:'',component:IndexComponent},
-  {path:'login',component:LoginComponent},
+  {path:'login',component:LoginComponent}, 
   {path:'signup',component:SignupComponent},
   {path:'track-order',component:TrackorderComponent},
   {path:'detail/:product_name',component:DetailComponent},
   {path:'admin',component:AdminComponent},
   {path:'cart/:product_name',component:CartComponent},
+  {path:'profile',component:ProfileComponent},
 ];
 
 @NgModule({
@@ -45,6 +48,7 @@ const routes: Routes = [
     DetailComponent,
     AdminComponent,
     CartComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,7 +56,8 @@ const routes: Routes = [
     AngularFireModule.initializeApp(config),
     AngularFireAuthModule,
     AngularFireDatabaseModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormsModule
     
   ],
   providers: [],

@@ -1,22 +1,22 @@
 <div class="box">
-    <form style="margin: 50px; padding: 0px 350px 0px 350px;">
-        <legend class="center">Signup</legend>
-        <div class="form-group">
-          <label for="username">Userame</label>
-          <input type="name" class="form-control" id="Username" placeholder="Username">
-        </div>
-        <div class="form-group">
-          <label for="Email1">Email address</label>
-          <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="Enter email">
-        </div>
-        <div class="form-group">
-          <label for="password1">Password</label>
-          <input type="password" class="form-control" id="Password1" placeholder="Password">
-        </div>
-        <div class="center">
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-    </form>
+  <div style="margin: 50px; padding: 0px 350px 0px 350px;">
+    <legend class="center">Signup</legend>
+    <div class="form-group">
+      <label for="username">Userame</label>
+      <input type="name" class="form-control" id="user" placeholder="Username" [(ngModel)]="user">
+    </div>
+    <div class="form-group">
+      <label for="Email1">Email address</label>
+      <input type="email" class="form-control" id="email1" aria-describedby="Email" placeholder="Enter email" [(ngModel)]="email">
+    </div>
+    <div class="form-group">
+      <label for="password1">Password</label>
+      <input type="password" class="form-control" id="password" placeholder="Password" [(ngModel)]="password">
+    </div>
+    <div class="center">
+      <a href="/indexuser" type="submit" class="btn btn-primary" role="button" (click)="register()">Submit</a>
+    </div>
+  </div>
 </div>
 
-<button (click)="insert()">submit</button>
+<!-- <button (click)="insert()">submit</button> -->

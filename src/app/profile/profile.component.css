@@ -3,15 +3,11 @@
 }
 
 .center {
-  text-align: center; 
+  text-align: center;
 }
 
 .box-detail-user {
-  padding: 70px 0px 0px 0px; 
+  padding: 70px 0px 0px 0px;
   font-weight: bold;
   font-size: 18px;
-}
-
-.box-search {
-  padding: 10px 0px 60px 300px;
 }

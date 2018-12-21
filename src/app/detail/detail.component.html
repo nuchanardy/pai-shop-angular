@@ -27,7 +27,7 @@
         <p>Price: {{ productss.price }}</p>
       </div>
       <div class="box-cart">
-        <a href="http://0.0.0.0:4200/cart" class="btn btn-success" role="button"[routerLink]="[ '/cart', productss.name ]">Add To Cart</a>
+        <a href="/cart" class="btn btn-success" role="button" [routerLink]="[ '/cart', productss.name ]">Add To Cart</a>
       </div>
     </div>
 

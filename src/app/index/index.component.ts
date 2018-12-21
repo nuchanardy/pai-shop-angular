@@ -8,10 +8,10 @@ import { Observable } from 'rxjs';
   styleUrls: ['./index.component.css']
 })
 export class IndexComponent implements OnInit {
-
+ 
   constructor(private firebase: AngularFireDatabase) { }
 
-  private products: Observable<any[]>;
+  products: Observable<any[]>; 
 
   ngOnInit() {
     this.products = this.firebase.list('product').valueChanges();

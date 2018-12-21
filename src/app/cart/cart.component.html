@@ -4,7 +4,7 @@
 
         <div class="col-md-12 end-box">
             <strong>
-                <h2 class="center" style="color:white;">Shopping Basket</h2>
+                <h4 class="center" style="color:white; font-weight: bold; font-size: 20px;">Shopping Basket</h4>
             </strong>
         </div>
 
@@ -12,10 +12,10 @@
             <table class="table table-hover">
                 <thead>
                     <tr>
-                        <th scope="col" class="text-size">Product Name</th>
-                        <th scope="col" class="text-size">Price</th>
-                        <th scope="col" class="text-size">Quantity</th>
-                        <th scope="col" class="text-size">Subtotal</th>
+                        <th scope="col" class="text-size" style="text-align: center;">Product Name</th>
+                        <th scope="col" class="text-size" style="text-align: center;">Price</th>
+                        <th scope="col" class="text-size" style="text-align: center;">Quantity</th>
+                        <th scope="col" class="text-size" style="text-align: center;">Subtotal</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -35,7 +35,8 @@
             <div class="col-md-6">
                 <div class="col-md-12 end-box">
                     <strong>
-                        <h2 class="center" style="color:white; font-size: 15px;">Order Summary</h2>
+                        <h4 class="center" style="color:white; font-size: 15px; font-weight: bold; font-size: 20px;">Order
+                            Summary</h4>
                     </strong>
                 </div>
                 <table class="table table-hover">
@@ -55,7 +56,8 @@
                     </tbody>
                 </table>
                 <div class="center">
-                    <a href="#" class="btn btn-info" role="button" style="font-size: 15px; border-radius: 15px; padding: 15px;">Submit</a>
+                    <a class="btn btn-primary" *ngIf="!isLogined" (click)="routpage('/login')">Submit</a>
+                    <a class="btn btn-primary" *ngIf="isLogined" (click)="routpage('/profile')">Submit</a>
                 </div>
             </div>
         </div>
